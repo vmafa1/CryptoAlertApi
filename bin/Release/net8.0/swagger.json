@@ -1,0 +1,65 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "CryptoAlertApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Alert": {
+      "post": {
+        "tags": [
+          "Alert"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AlertRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AlertRequest": {
+      "required": [
+        "body",
+        "subject",
+        "toEmail"
+      ],
+      "type": "object",
+      "properties": {
+        "toEmail": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "subject": {
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "body": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "telegramMessage": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

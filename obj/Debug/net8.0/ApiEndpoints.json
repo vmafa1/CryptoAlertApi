@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "AlertsController",
+    "Method": "SendAlert",
+    "RelativePath": "api/Alerts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CryptoAlertApi.Models.AlertRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlertsController",
+    "Method": "DebugConfig",
+    "RelativePath": "api/Alerts/debug-config",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
