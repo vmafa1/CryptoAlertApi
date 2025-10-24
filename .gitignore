@@ -1,0 +1,39 @@
+﻿# Build artifacts
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# VS Code and Visual Studio folders
+.vscode/
+.vs/
+
+# OS-generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and caches
+*.log
+*.cache
+*.db
+
+# Azure deployment artifacts
+*.Publish.xml
+*.pubxml
+*.azurePubxml
+
+# Copilot and debug folders
+copilot-chat/
+DesignTimeBuild/
+
+# Optional: ignore secrets if not using Key Vault yet
+appsettings.Development.json
+secrets.json
